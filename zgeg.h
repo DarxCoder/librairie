@@ -12,7 +12,7 @@ void	wesh_alors(int nb)
 		izi_bouzou('-');
 		nb = -nb;
 	}
-	if(nb <= 10)
+	if(nb >= 10)
 	{
 		wesh_alors(nb / 10);
 		wesh_alors(nb % 10);
