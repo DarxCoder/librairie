@@ -9,16 +9,16 @@ void	wesh_alors(int nb)
 {
 	if(nb < 0)
 	{
-		ft_putchar('-');
+		izi_bouzou('-');
 		nb = -nb;
 	}
 	if(nb <= 10)
 	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
+		wesh_alors(nb / 10);
+		wesh_alors(nb % 10);
 	}
 	else
 	{
-		ft_putchar(nb + '0');
+		izi_bouzou(nb + '0');
 	}
 }
